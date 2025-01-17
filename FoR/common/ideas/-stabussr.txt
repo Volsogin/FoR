@@ -1,0 +1,20 @@
+ideas = {
+    country = {
+        ideas1 = {
+            allowed = {
+                always = yes
+            }
+
+            removal_cost = -1
+            picture = GFX_decision_SOV_exiles_state
+
+            modifier = {
+                stability_factor = -0.5
+            }
+
+
+        }
+    }
+
+
+}

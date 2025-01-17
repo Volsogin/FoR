@@ -1,0 +1,143 @@
+focus_tree = {
+    id = multi_country_focus_tree
+
+    country = {
+        factor = 1
+        modifier = {
+            add = 10
+            tag = UKR
+        }
+        modifier = {
+            add = 10
+            tag = SOV
+        }
+        modifier = {
+            add = 10
+            tag = BLR
+        }
+    }
+
+    default = no
+
+    available = {
+        OR = {
+            has_dlc = "No Step Back"
+            tag = SOV
+            tag = UKR
+            tag = BLR
+        }
+    }
+
+    focus = {
+        id = focus1
+        x = 5
+        y = 0
+        cost = 1
+        icon = GFX_focus_ger_bulwark_against_bolshevism
+        completion_reward = {
+            add_political_power = 50
+            country_event = ussr.1
+        }
+    }
+
+    focus = {
+        id = focus2
+        prerequisite = { focus = focus1 }
+        x = 5
+        y = 1
+        cost = 4
+        icon = GFX_SOV_bringing_breakaways_back_to_the_fold_ccp_2d_sov_compatibility
+        completion_reward = {
+            add_political_power = 50
+            country_event = ussr2.1
+        }
+    }
+
+    focus = {
+        id = comm
+        prerequisite = { focus = focus2 }
+        mutually_exclusive = { focus = fash focus = neit focus = dmcr }
+        x = 2
+        y = 3
+        cost = 7
+        icon = GFX_focus_generic_join_comintern
+        completion_reward = {
+            add_political_power = 150
+            set_politics = {
+                ruling_party = communism
+                communism = 0.7
+            }
+            add_stability = 0.1
+            add_popularity = {
+                ideology = communism
+                popularity = 0.15
+            }
+        }
+    }
+
+    focus = {
+        id = fash
+        prerequisite = { focus = focus2 }
+        mutually_exclusive = { focus = comm focus = neit focus = dmcr }
+        x = 4
+        y = 3
+        cost = 7
+        icon = GFX_goal_demand_sudetenland
+        completion_reward = {
+            add_political_power = 150
+            set_politics = {
+                ruling_party = fascism
+                fascism = 0.7
+            }
+            add_stability = 0.1
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.15
+            }
+        }
+    }
+
+    focus = {
+        id = neit
+        prerequisite = { focus = focus2 }
+        mutually_exclusive = { focus = comm focus = fash focus = dmcr }
+        x = 7
+        y = 3
+        cost = 7
+        icon = GFX_focus_generic_home_defense
+        completion_reward = {
+            add_political_power = 150
+            set_politics = {
+                ruling_party = neutrality
+                neutrality = 0.7
+            }
+            add_stability = 0.15
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.15
+            }
+        }
+    }
+
+    focus = {
+        id = dmcr
+        prerequisite = { focus = focus2 }
+        mutually_exclusive = { focus = comm focus = fash focus = neit }
+        x = 9
+        y = 3
+        cost = 7
+        icon = GFX_focus_chi_british_cooperation
+        completion_reward = {
+            add_political_power = 150
+            set_politics = {
+                ruling_party = democratic
+                democratic = 0.7
+            }
+            add_stability = 0.1
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.15
+            }
+        }
+    }
+}

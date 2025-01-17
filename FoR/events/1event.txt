@@ -1,0 +1,13 @@
+add_namespace = ussr
+
+    country_event = {
+        id = ussr.1
+        title = ussr.1t
+        desc = ussr.1d
+        picture = GFX_report_event_SOV_cossack_cavalry
+        is_triggered_only = yes
+        option = {
+            name = ussr.1a
+            add_ideas = ideas1
+        }
+    }

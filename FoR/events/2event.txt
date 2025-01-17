@@ -1,0 +1,12 @@
+add_namespace = ussr2
+
+    country_event = {
+        id = ussr2.1
+        title = ussr2.1t
+        desc = ussr2.1d
+        picture = GFX_report_event_second_vienna_award_pact
+        is_triggered_only = yes
+        option = {
+            name = ussr2.1a
+        }
+    }

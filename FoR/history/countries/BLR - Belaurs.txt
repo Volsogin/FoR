@@ -1,0 +1,16 @@
+add_country_leader_role = {
+    character = BEL_NEIT_LEADER
+    ideology = despotism
+}
+add_country_leader_role = {
+    character = BEL_DEM_LEADER
+    ideology = liberalism
+}
+add_country_leader_role = {
+    character = BEL_COM_LEADER
+    ideology = marxism
+}
+add_country_leader_role = {
+    character = BEL_FASH_LEADER
+    ideology = ultranationalism
+}

@@ -1,0 +1,1 @@
+recruit_character = UKR_DEM_LEADER

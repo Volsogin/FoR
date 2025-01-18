@@ -1,0 +1,19 @@
+characters = {
+    UKR_DEM_LEADER = {
+        name = UKR_DEM_LEADER
+        portraits = {
+            civilian = {
+                large = GFX_UKR_DEM 
+            }
+        }
+        country_leader = {
+            ideology = conservatism
+            expire = "1965.1.1.1"
+            id = -1
+            traits = { Conservative Politician }
+        }
+
+    }
+
+
+}

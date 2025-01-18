@@ -2,7 +2,7 @@ focus_tree = {
     id = multi_country_focus_tree
 
     country = {
-        factor = 1
+        factor = 0
         modifier = {
             add = 10
             tag = UKR
@@ -72,6 +72,18 @@ focus_tree = {
                 ideology = communism
                 popularity = 0.15
             }
+            if = {
+                limit = { tag = SOV }
+                set_country_leader = RUS_COM_LEADER
+            }
+            if = {
+                limit = { tag = UKR }
+                set_country_leader = UKR_COM_LEADER
+            }
+            if = {
+                limit = { tag = BLR }
+                set_country_leader = BEL_COM_LEADER
+            }
         }
     }
 
@@ -93,6 +105,18 @@ focus_tree = {
             add_popularity = {
                 ideology = fascism
                 popularity = 0.15
+            }
+            if = {
+                limit = { tag = SOV }
+                set_country_leader = RUS_FASH_LEADER
+            }
+            if = {
+                limit = { tag = UKR }
+                set_country_leader = UKR_FASH_LEADER
+            }
+            if = {
+                limit = { tag = BLR }
+                set_country_leader = BEL_FASH_LEADER
             }
         }
     }
@@ -116,6 +140,42 @@ focus_tree = {
                 ideology = neutrality
                 popularity = 0.15
             }
+            if = {
+            limit = { tag = UKR }
+            create_country_leader = {
+			    name = "UKR_NEIT"
+			    desc = "UKR_NEIT_DESC"
+			    picture = GFX_UKR_NEIT
+			    expire = "1965.1.1"
+			    ideology = despotism
+			    traits = { }
+		    }
+        
+        }
+            if = {
+            limit = { tag = BLR }
+            create_country_leader = {
+			    name = "BEL_NEIT"
+			    desc = "BEL_NEIT_DESC"
+			    picture = GFX_BEL_NEIT
+			    expire = "1965.1.1"
+			    ideology = despotism
+			    traits = { }
+		    }
+        
+        }
+            if = {
+            limit = { tag = SOV }
+            create_country_leader = {
+			    name = "RUS_NEIT"
+			    desc = "RUS_NEIT_DESC"
+			    picture = GFX_RUS_NEIT
+			    expire = "1965.1.1"
+			    ideology = despotism
+			    traits = { }
+		    }
+        
+        }
         }
     }
 
@@ -128,16 +188,52 @@ focus_tree = {
         cost = 7
         icon = GFX_focus_chi_british_cooperation
         completion_reward = {
-            add_political_power = 150
-            set_politics = {
-                ruling_party = democratic
-                democratic = 0.7
-            }
-            add_stability = 0.1
-            add_popularity = {
-                ideology = democratic
-                popularity = 0.15
-            }
+        add_political_power = 150
+        set_politics = {
+            ruling_party = democratic
+            democratic = 0.7
         }
+        add_stability = 0.1
+        add_popularity = {
+            ideology = democratic
+            popularity = 0.15
+        }
+        if = {
+            limit = { tag = UKR }
+            create_country_leader = {
+			    name = "UKR_DEM"
+			    desc = "UKR_DEM_DESC"
+			    picture = GFX_UKR_DEM
+			    expire = "1965.1.1"
+			    ideology = conservatism
+			    traits = { }
+		    }
+        
+        }
+        if = {
+            limit = { tag = BLR }
+            create_country_leader = {
+			    name = "BEL_DEM"
+			    desc = "BEL_DEM_DESC"
+			    picture = GFX_BEL_DEM
+			    expire = "1965.1.1"
+			    ideology = conservatism
+			    traits = { }
+		    }
+        
+        }
+        if = {
+            limit = { tag = SOV }
+            create_country_leader = {
+			    name = "RUS_DEM"
+			    desc = "RUS_DEM_DESC"
+			    picture = GFX_RUS_DEM
+			    expire = "1965.1.1"
+			    ideology = conservatism
+			    traits = { }
+		    }
+        
+        }
+    }   
     }
 }

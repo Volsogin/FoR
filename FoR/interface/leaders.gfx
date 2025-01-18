@@ -1,0 +1,43 @@
+spriteTypes = {	
+    				
+	spriteType = {
+		name = "GFX_UKR_DEM"
+		texturefile = "gfx\leaders\UKR\portrait_UKR_DEM.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_DEM"
+		texturefile = "gfx\leaders\RUS\portrait_RUS_DEM.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_DEM"
+		texturefile = "gfx\leaders\BEL\portrait_BEL_DEM.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_COM"
+		texturefile = "gfx\leaders\UKR\portrait_UKR_COM.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_COM"
+		texturefile = "gfx\leaders\BEL\portrait_BEL_COM.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_FASH"
+		texturefile = "gfx\leaders\UKR\portrait_UKR_FASH.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_FASH"
+		texturefile = "gfx\leaders\BEL\portrait_BEL_FASH.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_NEIT"
+		texturefile = "gfx\leaders\RUS\portrait_RUS_NEIT.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_NEIT"
+		texturefile = "gfx\leaders\UKR\portrait_UKR_FASH.dds"
+	}
+	spriteType = {
+		name = "GFX_BEL_NEIT"
+		texturefile = "gfx\leaders\BEL\portrait_BEL_NEIT.dds"
+	}
+}

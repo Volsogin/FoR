@@ -1,0 +1,8 @@
+add_country_leader_role = {
+    character = RUS_NEIT_LEADER
+    ideology = despotism
+}
+add_country_leader_role = {
+    character = RUS_DEM_LEADER
+    ideology = liberalism
+}

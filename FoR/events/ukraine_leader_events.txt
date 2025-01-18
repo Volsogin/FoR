@@ -1,0 +1,21 @@
+add_namespace = ukr_leader_events
+
+    country_event = {
+        id = ukr_leader_events.1
+        title = ukr_leader_events.1t
+        desc = ukr_leader_events.1d
+        picture = GFX_report_event_second_vienna_award_pact
+        is_triggered_only = yes
+        option = {
+            name = ukr_leader_events.1a
+            create_country_leader = {
+			name = "Wacheslav Lipinskiy"
+			desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+			picture = GFX_UKR_DEM
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = { }
+		}
+            
+        }
+    }
